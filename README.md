@@ -14,9 +14,38 @@ There are two main apps in the project:
 
 ---
 
+## 🔗 API Endpoint Descriptions
+
+### 🔹 Post Endpoints
+
+- `GET  http://127.0.0.1:8000/post/`  
+  ➤ Returns a list of all blog posts (paginated).  
+  ➤ Authenticated users can also create new posts using this endpoint (via POST method).
+
+- `GET http://127.0.0.1:8000/post/id `  
+  ➤ Returns the details of a specific post by its ID.  
+  ➤ The post's owner can update or delete their own post using PUT or DELETE methods.
+
+### 🔹 User Authentication Endpoints
+
+- `POST http://127.0.0.1:8000/user/register/`  
+  ➤ Allows a new user to register with username, email, and password.
+
+- `POST http://127.0.0.1:8000/user/login/`  
+  ➤ Authenticates the user and returns JWT access and refresh tokens.
+
+- `POST http://127.0.0.1:8000/user/logout/`  
+  ➤ Logs out the currently authenticated user (JWT blacklisting or session clearing depending on setup).
+
+---
+
 ## 🛠 Project Setup Instructions
 
 1. **Create and activate a virtual environment**:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
+2. **  Install PostgreSQL Adapter for Django **:
+    ```bash
+   pip install psycopg2-binary
