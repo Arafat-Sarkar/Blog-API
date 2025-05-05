@@ -56,7 +56,6 @@ PyScreeze
 python-dotenv
 pytweening
 pytz
-pywin32
 pyzmq
 redis
 requests
