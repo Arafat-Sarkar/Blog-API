@@ -110,7 +110,7 @@ WSGI_APPLICATION = 'Blog_API.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
+        
         default='postgresql://blog_api_73gi_user:0JfAeLeVxH1ZhbZWj6gGNprbjttTQUB9@dpg-d0cj6hje5dus73aeo6d0-a.oregon-postgres.render.com/blog_api_73gi',
     )
 }
