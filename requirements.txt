@@ -67,3 +67,4 @@ Werkzeug
 WTForms
 zope.event
 zope.interface
+dj-database-url
